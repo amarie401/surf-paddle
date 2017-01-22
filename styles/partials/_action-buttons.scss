@@ -1,0 +1,26 @@
+nav.article-buttons {
+  margin-top: 15px;
+  li.action {
+    @include list-style;
+    @include left-float;
+    background: $bgColor;
+    color: $subColor;
+    font-size: 11px;
+    text-align: center;
+    margin: 4px;
+    i.fa {
+      @include left-float;
+      line-height: 1.5;
+      padding: 4px 5px 4px 5px;
+      background: $secondaryBg;
+    }
+    .action-text {
+    padding: 0px 9px 0px 9px;
+    line-height: 2.0;
+      & a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

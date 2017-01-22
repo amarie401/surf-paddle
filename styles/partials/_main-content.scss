@@ -1,0 +1,45 @@
+.container {
+  width: 965px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 100px;
+}
+
+section.container article {
+  width: 60%;
+  float: left;
+}
+
+section.date-author {
+  height: 40px;
+  text-decoration: underline;
+  img {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    margin-right: 5px;
+    @include left-float;
+    border-radius: 50%;
+  }
+  .blog-author {
+    color: $commonBlue;
+    font-size: 11px;
+    @include left-float;
+    padding-top: 15px;
+}
+  .time-post {
+    color: $secondaryColor;
+    font-size: 10px;
+    padding-left: 3px;
+    @include left-float;
+    padding-top: 16px;
+  }
+  .date {
+    color: $secondaryColor;
+    font-size: 10px;
+    padding-left: 3px;
+    @include left-float;
+    padding-top: 16px;
+    text-decoration: underline;
+  }
+}

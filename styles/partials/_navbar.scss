@@ -1,0 +1,99 @@
+header {
+  height: 400px;
+  background:
+  linear-gradient(
+    rgba(16, 104, 164, 0.74),
+    rgba(0, 0, 0, 0.37)
+  ),
+  url("http://wallpapercave.com/wp/PjBqHw1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  nav {
+    margin: auto;
+    width: 765px;
+    padding: 8px 0 0 0;
+    li {
+      @include uppercase;
+    }
+  }
+}
+
+.header-logo-nav-container {
+  @include flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-logo {
+  @include flex;
+  align-content: center;
+  justify-content: flex-start;
+  width: 40%;
+  img {
+    height: 35px;
+    margin-top: 10px;
+    width: 35px;
+    margin-right:5px;
+  }
+  .header-top-text {
+    margin-top: 18px;
+    color: $tertiaryColor;
+  }
+}
+
+.header-nav {
+  @include flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-family: $navFont;
+  width: 40%;
+  ul li {
+    margin-right: 8px;
+    .search {
+      margin-right: 5px;
+    }
+  }
+}
+
+nav {
+  display: inline-block;
+  ul {
+    float: right;
+  }
+  li {
+    float: left;
+  }
+}
+
+.header-top-text ul li a {
+  @include decoration;
+  color: $tertiaryColor;
+}
+
+.search:after {
+  content: '   \f002';
+  margin-left: 5px;
+  font-family: FontAwesome;
+  color: $tertiaryColor;
+}
+
+.header-title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  .header-title {
+    color: $white;
+    h1 {
+    font-size: 4.5rem;
+    font-family: $navFont;
+    }
+  }
+  .header-title-tag {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: $tertiaryColor;
+    font-family: $brandFont;
+  }
+}

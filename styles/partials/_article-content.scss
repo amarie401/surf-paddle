@@ -1,0 +1,29 @@
+.article-content {
+  color: $primaryColor;
+  font-size: 13px;
+  line-height: 18px;
+  p {
+    margin: 20px 0 0;
+    span.dark-blue {
+      color: $bayColor;
+      & a {
+        color: $bayColor;
+      }
+    }
+  }
+  span {
+    @include underline;
+    color: $secondaryColor;
+    & a {
+    color: $secondaryColor;
+    }
+  }
+  blockquote {
+    color: $commonBlue;
+    font-size: 22px;
+    @include uppercase;
+    border-left: solid 2px $secondaryColor;
+    padding: 10px 25px 10px 10px;
+    margin: 25px 5px;
+  }
+}

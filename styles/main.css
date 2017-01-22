@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Asap", sans-serif; }
+
+h1 {
+  font-family: 'PT Sans", Arial, sans-serif';
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 81px;
+  text-align: center;
+  color: #fafcfe;
+  letter-spacing: -0.5px; }
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 46px;
+  text-align: left;
+  line-height: 48px;
+  padding: 25px 0 0 0;
+  color: #142940; }
+
+h3 {
+  color: #3d87c5;
+  font-family: "Oswald", sans-serif; }
+
+ul li {
+  text-decoration: none; }
+
+header {
+  height: 400px;
+  background: linear-gradient(rgba(16, 104, 164, 0.74), rgba(0, 0, 0, 0.37)), url("http://wallpapercave.com/wp/PjBqHw1.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  header nav {
+    margin: auto;
+    width: 765px;
+    padding: 8px 0 0 0; }
+    header nav li {
+      text-transform: uppercase; }
+
+.header-logo-nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%; }
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 40%; }
+  .header-logo img {
+    height: 35px;
+    margin-top: 10px;
+    width: 35px;
+    margin-right: 5px; }
+  .header-logo .header-top-text {
+    margin-top: 18px;
+    color: #053251; }
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  width: 40%; }
+  .header-nav ul li {
+    margin-right: 8px; }
+    .header-nav ul li .search {
+      margin-right: 5px; }
+
+nav {
+  display: inline-block; }
+  nav ul {
+    float: right; }
+  nav li {
+    float: left; }
+
+.header-top-text ul li a {
+  text-decoration: none;
+  color: #053251; }
+
+.search:after {
+  content: '   \f002';
+  margin-left: 5px;
+  font-family: FontAwesome;
+  color: #053251; }
+
+.header-title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center; }
+  .header-title-container .header-title {
+    color: #fff; }
+    .header-title-container .header-title h1 {
+      font-size: 4.5rem;
+      font-family: "Oswald", sans-serif; }
+  .header-title-container .header-title-tag {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: #053251;
+    font-family: "Asap", sans-serif; }
+
+.container {
+  width: 965px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 100px; }
+
+section.container article {
+  width: 60%;
+  float: left; }
+
+section.date-author {
+  height: 40px;
+  text-decoration: underline; }
+  section.date-author img {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    margin-right: 5px;
+    float: left;
+    border-radius: 50%; }
+  section.date-author .blog-author {
+    color: #3d87c5;
+    font-size: 11px;
+    float: left;
+    padding-top: 15px; }
+  section.date-author .time-post {
+    color: #bfcbd4;
+    font-size: 10px;
+    padding-left: 3px;
+    float: left;
+    padding-top: 16px; }
+  section.date-author .date {
+    color: #bfcbd4;
+    font-size: 10px;
+    padding-left: 3px;
+    float: left;
+    padding-top: 16px;
+    text-decoration: underline; }
+
+.article-content {
+  color: #83888c;
+  font-size: 13px;
+  line-height: 18px; }
+  .article-content p {
+    margin: 20px 0 0; }
+    .article-content p span.dark-blue {
+      color: #196FB1; }
+      .article-content p span.dark-blue a {
+        color: #196FB1; }
+  .article-content span {
+    text-decoration: underline;
+    color: #bfcbd4; }
+    .article-content span a {
+      color: #bfcbd4; }
+  .article-content blockquote {
+    color: #3d87c5;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-left: solid 2px #bfcbd4;
+    padding: 10px 25px 10px 10px;
+    margin: 25px 5px; }
+
+nav.article-buttons {
+  margin-top: 15px; }
+  nav.article-buttons li.action {
+    list-style: none;
+    float: left;
+    background: #9dadb3;
+    color: #fafcfe;
+    font-size: 11px;
+    text-align: center;
+    margin: 4px; }
+    nav.article-buttons li.action i.fa {
+      float: left;
+      line-height: 1.5;
+      padding: 4px 5px 4px 5px;
+      background: #5e6970; }
+    nav.article-buttons li.action .action-text {
+      padding: 0px 9px 0px 9px;
+      line-height: 2.0; }
+      nav.article-buttons li.action .action-text a {
+        text-decoration: none;
+        color: #fff; }
+
+section.aside {
+  float: right;
+  width: 40%;
+  padding-top: 45px; }
+  section.aside .pic-author {
+    text-align: center; }
+  section.aside aside.lower-aside {
+    margin: 30px 50px;
+    width: 200px; }
+  section.aside p.lower-aside-text {
+    text-align: left;
+    color: #bfcbd4;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px; }
+  section.aside img.avatar {
+    height: 60px;
+    width: 60px;
+    margin: 8px 5px 8px 0;
+    border-radius: 50%; }
+  section.aside p.name-author {
+    color: #3d87c5;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif; }
+
+ul.social-author {
+  padding-top: 4px;
+  display: inline-block;
+  text-align: center; }
+  ul.social-author li {
+    list-style: none;
+    font-size: 10px;
+    float: left;
+    padding: 0px 7px 0px 7px;
+    color: #bfcbd4; }
+    ul.social-author li a {
+      color: #bfcbd4;
+      text-decoration: none; }
+
+.square-ad {
+  margin: 30px 100px 40px 0;
+  text-align: center;
+  width: 100%; }
+  .square-ad .ad-caption {
+    color: #bfcbd4;
+    font-size: 10px;
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    font-family: "Asap", sans-serif;
+    text-decoration: none; }
+    .square-ad .ad-caption a {
+      color: #bfcbd4; }
+
+.posts-container {
+  border-top: solid 1px #e7ecf0; }
+  .posts-container h2 {
+    text-align: center;
+    background: #fafcfe; }
+  .posts-container .popular-posts {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .posts-container .posts-wrapper {
+    width: 25%;
+    height: 300px;
+    float: left;
+    min-width: 250px; }
+    .posts-container .posts-wrapper .post-title {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 20px;
+      text-align: left;
+      position: absolute;
+      margin: 250px 18px 18px 18px;
+      color: #1068A4; }
+
+div.posts-wrapper:first-child {
+  background: linear-gradient(rgba(16, 104, 164, 0.74), black), url("http://media.npr.org/assets/img/2017/01/06/dsc_0466-56_custom-67ef6a293b322ff7a93e35d826bb394f11fc2c09-s1500-c85.jpg") no-repeat center center; }
+
+div.posts-wrapper:nth-child(2) {
+  background: linear-gradient(rgba(110, 135, 162, 0), rgba(0, 0, 0, 0.74)), url("http://new.vallartaultimatehome.com/wp-content/uploads/bb-plugin/cache/bigstockphoto_Starfish_At_The_Beach_2905197-500x500-circle.jpg") no-repeat center center; }
+
+div.posts-wrapper:nth-child(3) {
+  background: linear-gradient(rgba(16, 104, 164, 0.74), black), url("https://s3.amazonaws.com/film.dev.testing/fs/files/production/fp_img/53627/500.9efc2c580136ec0f3b63e107f2ca60f3527bcd99.jpg") no-repeat center center; }
+
+div.posts-wrapper:nth-child(4) {
+  background: linear-gradient(rgba(16, 104, 164, 0.74), black), url("http://static.wixstatic.com/media/89ac24_9316a48ed5c84718a8dbfa8a7a73cfec.jpg_srz_500_500_75_22_0.5_1.2_75_png_srz") no-repeat center center; }
+
+footer {
+  overflow: hidden;
+  width: 100%;
+  height: 75px;
+  padding: 40px 0px 0px;
+  background-color: #083452;
+  position: relative; }
+
+.footer-left-text p {
+  font-family: "Asap", sans-serif;
+  color: #C0C0BE;
+  font-size: 14px;
+  display: inline-block;
+  margin: -15px 0 0 0;
+  padding: 0;
+  position: absolute;
+  word-spacing: 4px; }
+
+.footer-left-text img {
+  margin-top: -8px;
+  padding-top: 0px;
+  margin-bottom: -4px;
+  left: 100px;
+  display: inline-block;
+  padding-left: 100px; }
+
+.footer-left-text span {
+  font-family: "Asap", sans-serif;
+  color: #C0C0BE;
+  font-size: 12px;
+  display: inline-block;
+  margin: 2px 0 0 0;
+  padding: 0; }
+
+.footer-right-text {
+  font-family: "Asap", sans-serif;
+  color: #C0C0BE;
+  font-size: 12px;
+  display: inline-block;
+  margin: -3.1px 0 0 0;
+  padding: 0;
+  position: absolute;
+  right: 100px;
+  word-spacing: 4px; }
+  .footer-right-text ul li {
+    display: inline-block;
+    border-right: 1px solid #C0C0BE;
+    padding: 0 9px 0 9px; }
+    .footer-right-text ul li a {
+      color: #C0C0BE;
+      text-decoration: none; }
+    .footer-right-text ul li:last-child {
+      border: none; }
+
+/*# sourceMappingURL=main.css.map */

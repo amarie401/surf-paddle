@@ -1,0 +1,43 @@
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@mixin pop-post {
+  font-family: $navFont;
+  @include uppercase;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  position: absolute;
+  margin: 250px 18px 18px 18px;
+  color: #1068A4;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin decoration {
+  text-decoration: none;
+}
+
+@mixin left-float {
+  float: left;
+}
+
+@mixin right-float {
+  float: right;
+}
+
+@mixin underline {
+  text-decoration: underline;
+}
+
+@mixin list-style {
+  list-style: none;
+}
+
+@mixin inline {
+  display: inline-block;
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: $brandFont;
+}
+
+h1 {
+  font-family: $headlineFont;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 81px;
+  text-align: center;
+  color: #fafcfe;
+  letter-spacing: -0.5px;
+  }
+
+h2 {
+  font-family: $navFont;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 46px;
+  text-align: left;
+  line-height: 48px;
+  padding: 25px 0 0 0;
+  color: #142940;
+}
+
+h3 {
+  color: $commonBlue;
+  font-family:$navFont;
+}
+
+ul li {
+  text-decoration: none;
+}
