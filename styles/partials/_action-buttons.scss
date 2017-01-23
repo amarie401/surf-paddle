@@ -1,5 +1,8 @@
 nav.article-buttons {
   margin-top: 15px;
+  ul li:hover {
+    background: #5484c4;
+  }
   li.action {
     @include list-style;
     @include left-float;
@@ -19,7 +22,7 @@ nav.article-buttons {
     line-height: 2.0;
       & a {
         text-decoration: none;
-        color: #69797f;
+        color: #324248;
       }
     }
   }

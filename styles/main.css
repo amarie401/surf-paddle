@@ -223,6 +223,8 @@ section.date-author {
 
 nav.article-buttons {
   margin-top: 15px; }
+  nav.article-buttons ul li:hover {
+    background: #5484c4; }
   nav.article-buttons li.action {
     list-style: none;
     float: left;
@@ -241,7 +243,7 @@ nav.article-buttons {
       line-height: 2.0; }
       nav.article-buttons li.action .action-text a {
         text-decoration: none;
-        color: #69797f; }
+        color: #324248; }
 
 section.aside {
   float: right;
